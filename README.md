@@ -1,14 +1,47 @@
-# 🔢 Tkinter Brojač - Brojačka Aplikacija za Raspberry Pi 5
+# 🎯 Tkinter GUI Aplikacije za Raspberry Pi 5
 
-Moderna GUI aplikacija napravljena sa **Tkinterom** (Python biblioteka za grafičko korisničko sučelje). Aplikacija prikazuje jednostavan ali elegantan brojač sa funkcionalnostima za povećanje, smanjenje i resetovanje vrijednosti.
+Kolekcija modernih GUI aplikacija napravljenih sa **Tkinterom** (Python biblioteka za grafičko korisničko sučelje). Perfektne za učenje i korištenje na Raspberry Pi 5.
+
+## 📱 Dostupne Aplikacije
+
+### 1. 🔢 Brojač (tkinter_01.py)
+Jednostavna ali elegantna aplikacija za brojanje sa gumbima za povećanje, smanjenje i resetovanje.
+
+**Karakteristike:**
+- ✅ Povećaj/Smanji/Resetuj brojač
+- ✅ Lijepo oblikovan UI sa bojama
+- ✅ Status povratne informacije
+
+**Pokretanje:** `python3 tkinter_01.py`
+
+---
+
+### 2. 🔐 Generisač Lozinki (password_generataor.py)
+Napredna aplikacija za generisanje sigurnih nasumičnih lozinki sa raznim opcijama.
+
+**Karakteristike:**
+- ✅ Generisanje lozinki sa odabranom dužinom (4-128 karaktera)
+- ✅ Odabir tipova karaktera:
+  - Velika slova (A-Z)
+  - Mala slova (a-z)
+  - Brojevi (0-9)
+  - Specijalni znakovi (!@#$%)
+- ✅ Kopiranje u clipboard sa jednim klikom
+- ✅ Vizuelne povratne informacije
+- ✅ Reset sve vrednosti
+
+**Pokretanje:** `python3 password_generataor.py`
+
+---
 
 ## 🎯 Opis Projekta
 
-Ova aplikacija demonstrira osnove Tkinter GUI programiranja sa:
+Ova kolekcija pokazuje osnove Tkinter GUI programiranja sa:
 - **Modernim dizajnom** - profesionalni izgled sa header i footer sekcijom
-- **Responzivnim gumbima** - tri gumba za rad sa brojačem
-- **Status povratnom informacijom** - poruke sa bojama koje pokazuju što je učinjeno
-- **Optimizacijom za Raspberry Pi 5** - lagana i brza na malim uređajima
+- **Raznolikim aplikacijama** - različitih funkcionalnosti
+- **Responzivnim gumbima** - gumbi sa hover efektima
+- **Status povratnom informacijom** - poruke sa bojama
+- **Optimizacijom za Raspberry Pi 5** - lagane i brze na malim uređajima
 
 ## ✨ Karakteristike
 
@@ -47,19 +80,16 @@ sudo apt-get install python3-tk
 brew install python-tk@3.11  # ili vaša verzija Pythona
 ```
 
-## 🚀 Instalacija
-
-### Kloniranje repozitorija
-
-```bash
-git clone https://github.com/zerixmax/oleadbot-thinker.git
-cd OL-OPYT_DEV_H-04-25-tkinter-intro
-```
+## 🚀 Pokretanje Aplikacija
 
 ### Na lokalnom računalu
 
 ```bash
+# Brojač
 python3 tkinter_01.py
+
+# Generisač Lozinki
+python3 password_generataor.py
 ```
 
 ### Na Raspberry Pi 5
@@ -69,11 +99,14 @@ python3 tkinter_01.py
 ssh pi@your_pi_ip
 cd path/to/project
 
-# Pokrenite aplikaciju
-python3 tkinter_01.py
+# Pokrenite aplikaciju (odaberite jednu)
+python3 tkinter_01.py              # Brojač
+python3 password_generataor.py     # Generisač Lozinki
 ```
 
 ## 🎮 Kako Koristiti
+
+### Brojač (tkinter_01.py)
 
 1. **Pokrenite aplikaciju** sa `python3 tkinter_01.py`
 2. **Vidjet ćete veliki broj (0) u sredini**
@@ -83,13 +116,27 @@ python3 tkinter_01.py
    - 🔄 **RESET** - vraća broj na 0
 4. **Status poruka** prikazuje što je učinjeno
 
+### Generisač Lozinki (password_generataor.py)
+
+1. **Pokrenite aplikaciju** sa `python3 password_generataor.py`
+2. **Odaberite dužinu lozinke** (4-128 karaktera)
+3. **Odaberite tipove karaktera:**
+   - ☑ Velika slova (A-Z)
+   - ☑ Mala slova (a-z)
+   - ☑ Brojevi (0-9)
+   - ☐ Specijalni znakovi (!@#$%)
+4. **Kliknite ⚡ GENERIŠI** za pravljenje lozinke
+5. **Kliknite 📋 KOPIRAJ** za kopiranje u clipboard
+6. **Kliknite 🔄 RESET** za resetovanje
+
 ## 📂 Struktura Projekta
 
 ```
 OL-OPYT_DEV_H-04-25-tkinter-intro/
-├── README.md           # Ovaj fajl
-├── tkinter_01.py       # Glavna aplikacija
-└── .git/              # Git repozitorij
+├── README.md                # Ovaj fajl
+├── tkinter_01.py            # Aplikacija: Brojač
+├── password_generataor.py   # Aplikacija: Generisač Lozinki
+└── .git/                    # Git repozitorij
 ```
 
 ## 🛠️ Kako Radi Kod
